@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+    font-size: 16px;
+}
+/* common css start here ===== */
+.section-padding{
+    padding: 50px 0px ;
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+
+
+/* common css end  here ===== */
+
+/* =====================================================index paage css start here ========================== */
+.slider-item {
+    position: relative;
+    height: 80vh;
+    background-color: red;
+    overflow: hidden; /* Add this to hide overflow content */
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+
+}
+.index_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45); /* Adjust the color and opacity as needed */
+}
+.slider-text{
+    position: absolute ;
+    top: 30%;
+    right: 10%;
+    z-index: 1;
+    width: 100%;
+    text-align: right ;
+    margin-right:100px ;
+    transform: translateX(-50% , -50%);
+
+}
+
+.slider-text h1{
+    text-transform: uppercase;
+    font-size: 7vw;
+    /*Adjustthevaluebasedonyourdesign*/font-weight: 900;
+    color: rgb(243, 200, 8);
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.55); 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.slider-text h6{
+    text-transform: uppercase;
+    font-size: 2vw; /* Adjust the value based on your design */
+    font-weight: 600;
+    color: #fff;
+    word-spacing: 10px ;
+    text-align: right;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+.slider-text h4{
+    text-transform: uppercase;
+    font-size: 22px ; /* Adjust the value based on your design */
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+    font-style: italic;
+    word-spacing: 10px ;
+    margin-top: 20px;
+  
+}
+.slider-text a button{
+    padding: 10px 20px;
+    font-size: 16px;
+    /*Adjustthefontsize*/text-decoration: none;
+    color: #fff;
+    background-color: #28a745;
+    /*Adjustthebuttonbackgroundcolor*/border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.35s;
+    -webkit-transition: background-color 0.35s;
+    -moz-transition: background-color 0.35s;
+    -ms-transition: background-color 0.35s;
+    -o-transition: background-color 0.35s;
+    margin-top: 10px;
+    transition: 1s linear;
+}
+.slider-text a button:hover {
+    background-color: red; /* Adjust the button hover background color */
+    border-left: 5px solid #ffff ;
+    border-right: 5px solid #ffff ;
+    transition: 1s linear;
+}
+
+.owl-carousel .owl-item.active .slider-item .slider-text h1{
+    animation: zoomIn 2s linear; /* Adjust the animation duration and iteration as needed */
+    letter-spacing: 10px;
+    border-left: 5px solid red ;
+    border-right: 5px solid red ;
+}
+.owl-carousel .owl-item.active .slider-item .slider-text h6{
+    animation: fadeInUp 2s linear; /* Adjust the animation duration and iteration as needed */
+}
+.owl-carousel .owl-item.active .slider-item .slider-text h4{
+    animation: zoomIn 2s linear; /* Adjust the animation duration and iteration as needed */
+}
+.owl-carousel .owl-item.active .slider-item .slider-text a button{
+    animation: zoomIn 2s linear; /* Adjust the animation duration and iteration as needed */
+}
+
+/*  Nav Text css  */
+        /* Your custom styles go here */
+.prev{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px !important;
+    height: 40px;
+    width: 40px ;
+    border-radius: 2px ;
+    color: #000;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    transition: 0.35 linear;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    animation:zoomIn 3s infinite; 
+
+    }
+.next {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px !important;
+    height: 40px;
+    width: 40px ;
+    border-radius: 2px ;
+    color: #000;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    transition: 0.35 linear;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    animation:zoomIn 3s infinite;
+
+    }
+ .next:hover{
+    background-color: red;
+    border-left: 2px solid #ffff;
+    border-right: 2px solid #ffff;
+    transition: 0.35 linear;
+    color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+     
+ .prev:hover{
+    background-color: red;
+    border-left: 2px solid #ffff;
+    border-right: 2px solid #ffff;
+    transition: 0.35s linear;
+    color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+/* banner social button css  */
+.banner-social{
+    position: fixed;
+    top: 45%;
+    right: 0;
+    z-index: 1040;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px !important;
+    height: auto;
+    width: 80px;
+    border-radius: 2px ;
+    color: #000;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    transition: 0.35 linear;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding-bottom: 3px ;
+    animation:fadeInLeft 3s linear; 
+    animation-delay: 3s;
+}
+.banner-social ul li{
+    background: #ffff;
+    padding: 1px ;
+}
+.banner-social ul li a:hover{
+    animation : jello 0.35s linear;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+   
+}
+
+/* ========================================================index page css end here ============================ */
