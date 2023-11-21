@@ -1,5 +1,5 @@
 
-
+// menu css start here ==================
 (() =>{
  
   const openNavMenu = document.querySelector(".open-nav-menu"),
@@ -65,4 +65,17 @@
   });
 
 })();
+
+// hover puse is here 
+
+
+
+// var mousepush = document.querySelector(".banner-social");
+
+// mousepush.addEventListener("mouseover", function() {
+//   mousepush.classList.add("banner-social");
+// });
+// mousepush.addEventListener("mouseout", function() {
+//   mousepush.classList.remove("banner-social");
+// });
 

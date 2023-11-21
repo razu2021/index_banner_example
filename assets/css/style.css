@@ -72,11 +72,10 @@ h1,h2,h3,h4,h5,h6{
     top: 30%;
     right: 10%;
     z-index: 1;
-    width: 100%;
+    width: 55%;
     text-align: right ;
     margin-right:100px ;
     transform: translateX(-50% , -50%);
-
 }
 
 .slider-text h1{
@@ -120,6 +119,8 @@ h1,h2,h3,h4,h5,h6{
     background-color: #28a745;
     /*Adjustthebuttonbackgroundcolor*/border: none;
     border-radius: 5px;
+    border-left: 3px solid yellow;
+    border-right: 3px solid yellow;
     cursor: pointer;
     transition: background-color 0.35s;
     -webkit-transition: background-color 0.35s;
@@ -172,7 +173,7 @@ h1,h2,h3,h4,h5,h6{
     border-right: 2px solid red;
     transition: 0.35 linear;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    animation:zoomIn 3s infinite; 
+    animation:zoomIn 3s linear; 
 
     }
 .next {
@@ -193,7 +194,7 @@ h1,h2,h3,h4,h5,h6{
     border-right: 2px solid red;
     transition: 0.35 linear;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    animation:zoomIn 3s infinite;
+    animation:zoomIn 3s linear;
 
     }
  .next:hover{
@@ -250,3 +251,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* ========================================================index page css end here ============================ */
+
+
+
+.add-style{
+    color: red;
+    font-size:50px;
+}
